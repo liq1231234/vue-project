@@ -1,7 +1,41 @@
 @primary-color: #1890ff;
-
+@fontSize: 28px;
 .flex-center() {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+// 定义一个混合器
+// @button-style:{
+//     border: none;
+//     padding: 10px 20px;
+//     // color: white;
+//   }
+.button-style() {
+  border: none;
+  padding: 10px 20px;
+  // color: white;
+}
+.text_ellipsis_some(@count:1) {
+  //多行隐藏带省略号
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @count;
+  -webkit-box-orient: vertical;
+}
+.backgroundImg(@imgUrl,@left:0,@right:0) {
+  background: url(@imgUrl) no-repeat @left @right;
+  background-size: 100% 100%;
+}
+.font_params(@sizes,@fam,@wei) {
+  font-size: @sizes;
+  font-family: @fam;
+  font-weight: @wei;
+}
+
+.border_params2() {
+  border: 1px solid red;
 }
