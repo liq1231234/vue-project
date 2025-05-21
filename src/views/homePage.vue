@@ -18,6 +18,6 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
+// eslint-disable-next-line
 const title = ref('123')
-console.log(title)
 </script>
