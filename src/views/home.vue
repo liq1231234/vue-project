@@ -10,7 +10,7 @@
 </style>
 <template>
   <div class="box flex-center">
-    <div class="title">123</div>
+    <div class="title">456</div>
   </div>
 </template>
 <script lang="ts" setup></script>
