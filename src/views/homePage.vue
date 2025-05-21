@@ -2,15 +2,11 @@
 .box {
   width: 100%;
   height: 100vh;
-  .flex-center();
+
   .title {
     color: @primary-color;
     font-size: @fontSize;
     .text_ellipsis_some(3);
-  }
-  .fj {
-    width: 100%;
-    height: 100%;
   }
 }
 </style>
@@ -20,4 +16,8 @@
     <div class="fj"></div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script lang="ts" setup>
+import { ref } from 'vue'
+const title = ref('123')
+console.log(title)
+</script>
